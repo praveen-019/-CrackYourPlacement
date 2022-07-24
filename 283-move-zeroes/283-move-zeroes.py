@@ -6,7 +6,6 @@ class Solution:
             n = nums.count(0)
             for i in range(n):
                 nums.remove(0)
-            for i in range(n):
                 nums.append(0)
                         
         """
