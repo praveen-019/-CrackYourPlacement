@@ -7,8 +7,8 @@ class Solution:
                 d[i] = 1
             else:
                 d[i] += 1
-        res = ""
-        d = sorted(d.items(),key=lambda item:item[1])
+        d = sorted(d.items(), key=lambda item:item[1])
+        s = ""
         for i in d[::-1]:
-            res = res + i[0]*i[1]
-        return res
+            s = s + i[0]*i[1]
+        return s
