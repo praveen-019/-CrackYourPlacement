@@ -1,10 +1,10 @@
 class Solution:
     def isValid(self, s: str) -> bool:
-        l = []
-        l.append(0)
+        stack = []
+        stack.append(0)
         for i in s:
-            if((l[-1] == '(' and i == ')') or (l[-1] == '[' and i == ']') or (l[-1] == '{' and i == '}')):
-                l.pop()
+            if((stack[-1] == '(' and i == ')') or (stack[-1] == '[' and i == ']') or (stack[-1] == '{' and i == '}')):
+                stack.pop()
             else:
-                l.append(i)
-        return len(l)==1
+                stack.append(i)
+        return len(stack)==1
