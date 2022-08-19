@@ -11,7 +11,6 @@ class Solution:
                     m = r-l+1
                 r += 1
             else:
-                a.pop(0)
+                a.remove(s[l])
                 l += 1
         return m
-                
