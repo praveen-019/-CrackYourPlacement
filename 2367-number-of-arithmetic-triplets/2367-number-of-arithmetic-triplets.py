@@ -8,6 +8,6 @@ class Solution:
                 dict[i] += 1
         count = 0
         for i in nums:
-            if dict.get(i+diff) and dict.get(i+(diff*2)):
+            if (i+diff) in dict and (i+(diff*2)) in dict:
                 count += 1
         return count
