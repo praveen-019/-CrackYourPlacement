@@ -5,5 +5,5 @@ class Solution:
             dict[i] = 1
         n = len(nums) + 1
         for i in range(n):
-            if i not in dict:
+            if dict.get(i) == None:
                 return i
